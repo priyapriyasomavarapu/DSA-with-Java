@@ -1,4 +1,4 @@
-class DSAMAIN
+class dsamain
 {
     public static void main(String args[]) 
     {

@@ -1,22 +1,19 @@
 import java.util.*;
+import java.lang.*;
 class day1
 {
     public static void main(String args[])
     {
         Scanner obj=new Scanner(System.in);
         int n=obj.nextInt();
-        for(int i=0;i<n;i++)
+        String Binary=" ";
+        while(n>0)
         {
-           System.out.println("enter the number:");
-           int a=obj.nextInt();
-           if((a&1)==0)
-           {
-              System.out.println("even");
-           }
-           else
-           {
-             System.out.println("odd");
-           }
+            int rem=n%2;
+            Binary=rem+Binary;
+            n=n/2;
         }
+        System.out.println(Binary);
+        
     }
 }

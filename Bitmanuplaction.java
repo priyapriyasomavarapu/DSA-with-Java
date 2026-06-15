@@ -2,7 +2,7 @@ class Bitmanuplaction
 {
     public static void main(String args[])
     {
-        int a=346,b=73;
-        System.out.println(a|b);
+        int a=160,b=140;
+        System.out.println(a&b);
     }
 }
