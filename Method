@@ -1,0 +1,21 @@
+Methods (Functions)
+A method is a block of code that performs a specific task.
+Methods (Functions)
+A method is a block of code that performs a specific task.
+Syntax
+returnType methodName(parameters) {
+}
+Example:
+public class Main {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(add(5, 3));
+    }
+}
+Types
+Predefined methods
+User-defined methods
