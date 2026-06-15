@@ -1,0 +1,49 @@
+OOP (Object-Oriented Programming)
+Concept:
+OOP models software using objects that represent real-world entities.
+Real world:
+Plain text
+Car
+ ├── color
+ ├── speed
+ └── start()
+Java:
+Java
+class Car {
+    String color;
+    int speed;
+
+    void start() {
+    }
+}
+Encapsulation
+Concept:
+Bundle data and methods together and restrict direct acceses
+
+Inheritance
+Concept:
+One class acquires properties of another class.
+Example:
+Plain text
+Animal
+   ↑
+ Dog
+Dog inherits common characteristics from Animal.
+
+Polymorphism
+Concept:
+One action, many forms.
+Example:
+Plain text
+Payment
+   ↑
+Credit Card Payment
+UPI Payment
+Cash Payment
+The same operation (pay()) behaves differently.
+
+Abstraction
+Concept:
+Hide implementation details and show only essential features.
+Example:
+You drive a car without knowing how the engine works.
