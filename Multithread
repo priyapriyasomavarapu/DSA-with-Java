@@ -1,0 +1,17 @@
+Multithreading
+Concept:Executing multiple tasks simultaneously
+
+Single-threaded:
+Plain text
+Download file
+Wait...
+Play music
+Wait...
+Send email
+Multithreaded:
+Plain text
+Download file
+Play music
+Send email
+All happen concurrently.
+When multiple threads access shared data, synchronization is needed to avoid inconsistencies.
