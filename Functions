@@ -1,0 +1,118 @@
+Functions (Methods) in Java
+In Java, functions are called methods because they are always defined inside a class.
+What is a Function (Method)?
+A method is a block of code that performs a specific task. It is used to avoid code repetition and improve readability.
+Syntax
+Java
+returnType methodName(parameters) {
+    // method body
+}
+returnType → Type of value returned (int, String, void, etc.)
+methodName → Name of the method
+parameters → Input values passed to the method
+Example 1: Method without Parameters and Return Type
+Java
+public class Main {
+
+    static void greet() {
+        System.out.println("Welcome to Java");
+    }
+
+    public static void main(String[] args) {
+        greet();
+    }
+}
+Output
+Plain text
+Welcome to Java
+Example 2: Method with Parameters
+Java
+public class Main {
+
+    static void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args) {
+        add(10, 20);
+    }
+}
+Output
+Plain text
+30
+Example 3: Method with Return Type
+Java
+public class Main {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add(10, 20);
+        System.out.println(result);
+    }
+}
+Output
+Plain text
+30
+Types of Methods in Java
+1. Predefined Methods
+Methods already available in Java libraries.
+Example:
+Java
+String name = "Java";
+
+System.out.println(name.length());
+System.out.println(Math.sqrt(25));
+2. User-Defined Methods
+Methods created by programmers.
+Example:
+Java
+static void display() {
+    System.out.println("Hello");
+}
+Four Types of Methods
+1. No Parameters, No Return Value
+Java
+static void show() {
+    System.out.println("Hello");
+}
+2. Parameters, No Return Value
+Java
+static void display(String name) {
+    System.out.println(name);
+}
+3. No Parameters, Return Value
+Java
+static int getNumber() {
+    return 100;
+}
+4. Parameters and Return Value
+Java
+static int multiply(int a, int b) {
+    return a * b;
+}
+Method Overloading
+Two or more methods with the same name but different parameters.
+Java
+class Demo {
+
+    void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    void add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+}
+Why Do We Use Methods?
+Without methods:
+Plain text
+Calculate area
+Calculate area
+Calculate area
+The same code is repeated.
+With methods:
+Java
+calculateArea();
