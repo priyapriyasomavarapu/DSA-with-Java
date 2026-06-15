@@ -1,0 +1,94 @@
+Encapsulation
+class BankAccount {
+    private int balance = 1000;
+
+    public void setBalance(int amount) {
+        balance = amount;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount();
+
+        account.setBalance(5000);
+        System.out.println(account.getBalance());
+    }
+}
+Abstraction
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts with key");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Car();
+        v.start();
+    }
+}
+Inheritance
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+
+        d.eat();
+        d.bark();
+    }
+}
+Polymorphism
+class Addition {
+
+    void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    void add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Addition obj = new Addition();
+
+        obj.add(10, 20);
+        obj.add(10, 20, 30);
+    }
+}
+Method Overriding (Runtime Polymorphism)
+Java
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+
+        a.sound();
+    }
+}
