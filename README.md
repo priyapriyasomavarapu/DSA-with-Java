@@ -14,3 +14,10 @@ DAY 1- basics of java
 7.sorting technique
 8.searching techniques
 9.Algorithm
+
+initialization of variable
+declare the variable
+loop with condition
+increment by using variables
+print the statment
+
