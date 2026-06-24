@@ -330,3 +330,81 @@ public class Day8{
         }
     }
 }*/
+//Dutch-national flag
+/*public class Day8 {
+    private static void swap(int [] array, int first, int second) {
+        int safe = array[first];
+        array[first] = array[second];
+        array[second] = safe;
+    }
+    private static void count(int [] arr){
+        int low=0,mid = 0, high = arr.length-1;
+        while(mid<= high) {
+            if(arr[mid] == 0) { 
+                swap(arr, low, mid);
+                low++;
+                mid++;
+            } else if(arr[mid] == 1) {
+                mid ++;
+            } else {
+                swap (arr, mid, high);
+                high--;
+            }
+        }
+    }
+    public static void main (String [] args) {
+        int[] arr= {0,1,2,2,1,0,1,2,0,0,2,1,1,2,0,1,0,2};
+        count(arr);
+        for (int num: arr){
+            System.out.print(num+ " ");
+        }
+    }
+}*/
+/*min heap
+import java.util.*;
+class Day8
+{
+    public static void main(String args[])
+    {
+        
+        PriorityQueue<Integer> min_heap=new PriorityQueue<Integer>();
+        min_heap.add(-11);
+        min_heap.add(-5);
+        min_heap.add(-9);
+        min_heap.add(12);
+        min_heap.add(-2);
+        min_heap.add(-3);
+        int num=min_heap.poll();
+        System.out.println(min_heap+" "+num);
+    }
+
+
+}*/
+/*ropes*/
+import java.util.*;
+class Day8
+{
+    private static int min_cost(int[] arr)
+    {
+       PriorityQueue<Integer> min_heap=new PriorityQueue<Integer>();
+       for(int val:arr )
+       {
+        min_heap.add(val);
+       }
+       while(min_heap.size()>1)
+       {
+        int first=min_heap.poll();
+        int second=min_heap.poll();
+        min_heap.add(first+second);
+        System.out.println(min_heap);
+       }
+       return min_heap.poll();
+    }
+
+    public static void main(String args[])
+    {
+        int arr[]={2,2,1,7,5,3};
+        System.out.println(min_cost(arr));
+    }
+
+}
